@@ -1,6 +1,6 @@
 {
   "name": "nice-react-router",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "nice-react-router",
   "files": [
     "esm",
@@ -8,7 +8,7 @@
     "cjs",
     "dist"
   ],
-  "main": "esm/index.js",
+  "main": "es2017/index.js",
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "exports": {
@@ -45,12 +45,12 @@
     "component"
   ],
   "dependencies": {
-    "@swc/helpers": "^0.5.1",
+    "@swc/helpers": "0.4.14",
     "@ice/jsx-runtime": "^0.2.0"
   },
   "devDependencies": {
     "@applint/spec": "^1.2.3",
-    "@ice/pkg": "^1.0.0",
+    "@ice/pkg": "1.5.5",
     "@ice/pkg-plugin-docusaurus": "^1.0.0",
     "eslint": "^8.0.0",
     "react": "^16.0.0",

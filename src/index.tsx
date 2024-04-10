@@ -1,6 +1,4 @@
-import * as React from 'react';
-const { useEffect, useState } = React;
-import './index.module.css';
+import React, { useEffect, useState } from 'react';
 
 interface NiceReactRoute {
     path: string;
