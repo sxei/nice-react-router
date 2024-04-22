@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.8 (2024-04-22)
+
+* `RouterLink`支持透传其它props；
+
 ## 1.0.7 (2024-04-22)
 
 * `RouterLink`新增`component`属性，不存默认`a`；

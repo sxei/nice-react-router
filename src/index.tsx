@@ -50,11 +50,11 @@ export const RouterLink = (props: {
     children?: any;
     component?: keyof JSX.IntrinsicElements;
 }) => {
-    const { to, children, component: Comp } = props;
+    const { to, children, component: Comp, ..._props } = props;
     if (!Comp || Comp === 'a') {
-        return <a href="javascript:;" onClick={() => getHistory()?.push(to)}>{children}</a>;
+        return <a href="javascript:;" onClick={() => getHistory()?.push(to)} {..._props}>{children}</a>;
     }
-    return <Comp onClick={() => getHistory()?.push(to)}>{children}</Comp>;
+    return <Comp onClick={() => getHistory()?.push(to)} {..._props}>{children}</Comp>;
 };
 
 /**
