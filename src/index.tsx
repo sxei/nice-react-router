@@ -48,9 +48,13 @@ export const RouterLink = (props: {
     /** 即将跳转的地址 */
     to?: string;
     children?: any;
+    component?: keyof JSX.IntrinsicElements;
 }) => {
-    const { to, children } = props;
-    return <a href="javascript:;" onClick={() => getHistory()?.push(to)}>{children}</a>;
+    const { to, children, component: Comp } = props;
+    if (!Comp || Comp === 'a') {
+        return <a href="javascript:;" onClick={() => getHistory()?.push(to)}>{children}</a>;
+    }
+    return <Comp onClick={() => getHistory()?.push(to)}>{children}</Comp>;
 };
 
 /**
